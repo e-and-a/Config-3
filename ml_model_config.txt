@@ -1,0 +1,19 @@
+dict(
+    model = dict(
+        name = @"ImageClassifier",
+        version = @"1.0",
+        parameters = dict(
+            learning_rate = 0.001,
+            batch_size = 64,
+            num_epochs = 10
+        ),
+        layers = dict(
+            type = [ @"conv" @"pool" @"dense" ],
+            num_units = [ 32 64 128 ]
+        )
+    ),
+    constants = dict(
+        const_decl = 0.001 -> lr,
+        const_eval = @"|lr| = learning_rate"
+    )
+)

@@ -1,0 +1,6 @@
+dict(
+    constants = dict(
+        const_decl = @"Hello World" -> greeting,
+        const_usage = |greeting|
+    )
+)

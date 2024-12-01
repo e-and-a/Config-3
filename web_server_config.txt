@@ -1,0 +1,14 @@
+dict(
+    server = dict(
+        port = 8080,
+        host = @"localhost",
+        settings = dict(
+            enable_ssl = @"False",
+            max_connections = 100
+        )
+    ),
+    paths = dict(
+        static = @"/var/www/static",
+        templates = @"/var/www/templates"
+    )
+)
